@@ -62,13 +62,11 @@ tech-haven/
 │   │   └── LandingPage.test.jsx
 │   ├── App.jsx
 │   └── main.jsx
-├── db.json                # Mock backend database
+├── db.json                
 ├── index.html
 ├── package.json
 ├── vite.config.js
 └── README.md
-plain
-Copy
 
 ## Setup Instructions
 
@@ -82,31 +80,35 @@ Copy
    ```bash
    git clone https://github.com/yourusername/tech-haven.git
    cd tech-haven
-Install dependencies:
-bash
-Copy
+
+2. Install dependencies:
+```bash
 npm install
-Start the mock backend (in a separate terminal):
-bash
-Copy
+
+3. Start the mock backend (in a separate terminal):
+```bash
 npm run server
+
 The JSON Server will run on http://localhost:3001
-Start the development server:
-bash
-Copy
+
+4. Start the development server:
+```bash
 npm run dev
+
 The app will be available at http://localhost:5173
-Running Tests
-bash
-Copy
+
+### Running Tests
+```bash 
 npm test
-Tests cover:
-Component rendering
-Form validation
-User interactions (clicking, typing)
-Navigation links
-Prop passing
-API Endpoints (JSON Server)
+
+### Tests cover:
+- Component rendering
+- Form validation
+- User interactions (clicking, typing)
+- Navigation links
+- Prop passing
+
+### API Endpoints (JSON Server)
 Table
 Method	Endpoint	Description
 GET	/store_info/1	Fetch store information
@@ -122,24 +124,35 @@ useId: Accessible form labeling
 useCallback: Memoized fetch functions
 Custom Hook: useProducts for centralized data access
 React Router: Client-side routing with URL parameters
-Known Limitations
-Images use external URLs (Unsplash) and may change or become unavailable
-JSON Server must be running separately from the dev server
-No authentication/authorization (admin portal is open)
-No pagination for large product catalogs
-Data persists only in memory (resets when JSON Server restarts unless db.json is modified)
-Future Enhancements
-Add product deletion functionality (DELETE requests)
-Implement image upload instead of URL input
-Add sorting and filtering by category
-Implement user authentication
-Add data persistence with a real database
-Add toast notifications for success/error feedback
-License
-MIT
-plain
-Copy
 
+### Known Limitations 
+- Images use external URLs (Unsplash) and may change or become unavailable
+- JSON Server must be running separately from the dev server
+
+- No authentication/authorization (admin portal is open)
+
+- No pagination for large product catalogs
+
+- Data persists only in memory (resets when JSON Server restarts unless db.json is modified)
+
+### Future Enhancements
+- Add product deletion functionality (DELETE requests)
+
+- Implement image upload instead of URL input
+
+- Add sorting and filtering by category
+
+- Implement user authentication
+
+- Add data persistence with a real database
+
+- Add toast notifications for success/error feedback
+
+### License
+MIT
+```
+with open(os.path.join(base_dir, "README.md"), "w") as f:
+f.write(readme_md)
 ---
 
 ## Final Step: How to Run the Project
