@@ -1,0 +1,94 @@
+{
+  "store_info": [
+    {
+      "id": 1,
+      "name": "Tech Haven",
+      "description": "Your sanctuary for premium technology and innovative gadgets.",
+      "phone_number": "+254716845916",
+      "email": "admin@techhaven.com",
+      "address": "CBD, Nairobi"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Quantum Headphones Pro",
+      "description": "Noise-cancelling over-ear headphones with 40-hour battery life and spatial audio.",
+      "category": "Audio",
+      "price": 299.99,
+      "stock": 45,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "SmartWatch Ultra",
+      "description": "Advanced fitness tracking, ECG monitoring, and 7-day battery life.",
+      "category": "Wearables",
+      "price": 449.99,
+      "stock": 32,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Drone X1 Explorer",
+      "description": "4K camera drone with 30-minute flight time and obstacle avoidance.",
+      "category": "Drones",
+      "price": 799.99,
+      "stock": 18,
+      "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=400",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "name": "VR Headset Vision",
+      "description": "Immersive virtual reality with 8K resolution and hand tracking.",
+      "category": "VR",
+      "price": 599.99,
+      "stock": 25,
+      "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=400",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "name": "Mechanical Keyboard RGB",
+      "description": "Hot-swappable switches, per-key RGB lighting, and aircraft-grade aluminum frame.",
+      "category": "Accessories",
+      "price": 159.99,
+      "stock": 60,
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "name": "Portable SSD 2TB",
+      "description": "Thunderbolt 4, 3000MB/s transfer speeds, shock-resistant design.",
+      "category": "Storage",
+      "price": 189.99,
+      "stock": 80,
+      "image": "https://images.unsplash.com/photo-1597872252165-4827e156d180?w=400",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "name": "Smart Home Hub",
+      "description": "Central control for all your smart devices with voice assistant integration.",
+      "category": "Smart Home",
+      "price": 129.99,
+      "stock": 40,
+      "image": "https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=400",
+      "featured": false
+    },
+    {
+      "id": 8,
+      "name": "Gaming Mouse Elite",
+      "description": "25K DPI sensor, wireless charging, and customizable RGB zones.",
+      "category": "Gaming",
+      "price": 89.99,
+      "stock": 55,
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400",
+      "featured": false
+    }
+  ]
+}
