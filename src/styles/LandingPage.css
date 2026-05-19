@@ -4,15 +4,23 @@
   gap: 4rem;
 }
 
+/* HERO SECTION */
 .hero {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 3rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 3rem 2rem;
   background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(99, 102, 241, 0.1) 100%);
   border-radius: var(--radius-xl);
   border: 1px solid var(--border-color);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-content h1 {
@@ -30,17 +38,21 @@
   color: var(--text-secondary);
   margin-bottom: 2rem;
   max-width: 500px;
+  text-align: center;
 }
 
 .hero-stats {
   display: flex;
   gap: 2.5rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .stat {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .stat-number {
@@ -62,6 +74,7 @@
   border-radius: var(--radius-md);
   font-weight: 600;
   transition: var(--transition);
+  text-align: center;
 }
 
 .hero-cta:hover {
@@ -69,17 +82,13 @@
   box-shadow: var(--shadow-lg);
 }
 
-.hero-visual {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* Hide removed spaceship */
+.hero-visual,
 .hero-icon {
-  font-size: 8rem;
-  filter: drop-shadow(0 0 30px rgba(99, 102, 241, 0.4));
+  display: none;
 }
 
+/* === FEATURED PRODUCTS === */
 .featured-section {
   text-align: center;
 }
@@ -121,6 +130,7 @@
   color: white;
 }
 
+/* === QUICK ACTIONS === */
 .quick-actions h2 {
   text-align: center;
   font-size: 2rem;
@@ -164,23 +174,14 @@
   text-align: center;
 }
 
+/* === MOBILE === */
 @media (max-width: 768px) {
   .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
     padding: 2rem 1rem;
   }
 
   .hero-content h1 {
     font-size: 2rem;
-  }
-
-  .hero-stats {
-    justify-content: center;
-  }
-
-  .hero-visual {
-    display: none;
   }
 
   .featured-grid {
