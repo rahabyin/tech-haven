@@ -37,9 +37,6 @@ function LandingPage() {
             Browse Products
           </Link>
         </div>
-        <div className="hero-visual">
-          <div className="hero-icon">🚀</div>
-        </div>
       </section>
 
       <section className="featured-section">
