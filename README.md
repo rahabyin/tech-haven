@@ -1,180 +1,271 @@
 # Tech Haven - Admin Portal
 
-A React-based Single Page Application (SPA) for managing an e-commerce store's product inventory. Built with modern frontend practices including React Router, Context API, custom hooks, and comprehensive testing.
+A React-based Single Page Application (SPA) for managing an e-commerce store's product inventory. The application demonstrates modern frontend development practices using React Router, Context API, custom hooks, CRUD operations, and unit testing.
+
+---
 
 ## Features
 
-- **Landing Page**: Store overview with featured products and admin quick actions
-- **Product Catalog**: Browse all products with real-time search functionality
-- **Product Detail**: View individual product details with inline editing capabilities
-- **Add Product**: Form to add new products to the inventory
-- **Search**: Dynamic product search across name, category, and description
-- **Responsive Design**: Fully responsive layout for desktop and mobile devices
-- **Admin Editing**: PATCH requests to update product details like price and stock
+- Landing page with store overview and featured products
+- Product catalog with real-time search functionality
+- Product detail page with inline editing capabilities
+- Add new products through a controlled form
+- Dynamic search across product name, category, and description
+- Responsive design for desktop and mobile devices
+- Product editing using PATCH requests
+- Simulated backend using JSON Server
+
+---
 
 ## Tech Stack
 
-- **React 18** - UI library with hooks and functional components
-- **React Router 6** - Client-side routing
-- **Vite** - Build tool and development server
-- **Vitest** - Unit testing framework
-- **React Testing Library** - Component testing utilities
-- **JSON Server** - Simulated REST API backend
+- React 18
+- React Router DOM
+- Vite
+- Vitest
+- React Testing Library
+- JSON Server
+- CSS3
+
+---
 
 ## Project Structure
+
+```txt
 tech-haven/
-├── public/
-├── src/
-│   ├── components/        # Reusable UI components
-│   │   ├── Navbar.jsx
-│   │   ├── Footer.jsx
-│   │   ├── ProductCard.jsx
-│   │   ├── ProductForm.jsx
-│   │   ├── LoadingSpinner.jsx
-│   │   └── ErrorMessage.jsx
-│   ├── pages/             # Route-level page components
-│   │   ├── LandingPage.jsx
-│   │   ├── ProductsPage.jsx
-│   │   ├── ProductDetailPage.jsx
-│   │   ├── AddProductPage.jsx
-│   │   └── NotFoundPage.jsx
-│   ├── hooks/             # Custom React hooks
-│   │   └── useProducts.jsx
-│   ├── styles/            # Component-specific CSS
-│   │   ├── index.css
-│   │   ├── App.css
-│   │   ├── Navbar.css
-│   │   ├── Footer.css
-│   │   ├── ProductCard.css
-│   │   ├── ProductForm.css
-│   │   ├── LoadingSpinner.css
-│   │   ├── ErrorMessage.css
-│   │   ├── LandingPage.css
-│   │   ├── ProductsPage.css
-│   │   ├── ProductDetailPage.css
-│   │   ├── AddProductPage.css
-│   │   └── NotFoundPage.css
-│   ├── tests/             # Unit tests
-│   │   ├── setup.js
-│   │   ├── Navbar.test.jsx
-│   │   ├── ProductCard.test.jsx
-│   │   ├── ProductForm.test.jsx
-│   │   └── LandingPage.test.jsx
-│   ├── App.jsx
-│   └── main.jsx
-├── db.json                
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
+
+- public/
+
+- src/
+  - components/
+    - Navbar.jsx
+    - Footer.jsx
+    - ProductCard.jsx
+    - ProductForm.jsx
+    - LoadingSpinner.jsx
+    - ErrorMessage.jsx
+
+  - pages/
+    - LandingPage.jsx
+    - ProductsPage.jsx
+    - ProductDetailPage.jsx
+    - AddProductPage.jsx
+    - NotFoundPage.jsx
+
+  - hooks/
+    - useProducts.jsx
+
+  - styles/
+    - index.css
+    - App.css
+    - Navbar.css
+    - Footer.css
+    - ProductCard.css
+    - ProductForm.css
+    - LoadingSpinner.css
+    - ErrorMessage.css
+    - LandingPage.css
+    - ProductsPage.css
+    - ProductDetailPage.css
+    - AddProductPage.css
+    - NotFoundPage.css
+
+  - tests/
+    - setup.js
+    - Navbar.test.jsx
+    - ProductCard.test.jsx
+    - ProductForm.test.jsx
+    - LandingPage.test.jsx
+
+  - App.jsx
+  - main.jsx
+
+- db.json
+- index.html
+- package.json
+- vite.config.js
+- README.md
+```
+
+---
 
 ## Setup Instructions
 
 ### Prerequisites
-- Node.js 18+ 
+
+Make sure you have the following installed:
+
+- Node.js 18 or higher
 - npm or yarn
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/tech-haven.git
-   cd tech-haven
-
-2. Install dependencies:
-```bash
-npm install
-
-3. Start the mock backend (in a separate terminal):
-```bash
-npm run server
-
-The JSON Server will run on http://localhost:3001
-
-4. Start the development server:
-```bash
-npm run dev
-
-The app will be available at http://localhost:5173
-
-### Running Tests
-```bash 
-npm test
-
-### Tests cover:
-- Component rendering
-- Form validation
-- User interactions (clicking, typing)
-- Navigation links
-- Prop passing
-
-### API Endpoints (JSON Server)
-Table
-Method	Endpoint	Description
-GET	/store_info/1	Fetch store information
-GET	/products	Fetch all products
-POST	/products	Add new product
-PATCH	/products/:id	Update existing product
-Advanced React Concepts Used
-useState: Local state management in forms and editing modes
-useEffect: Data fetching on component mount
-useContext: Global product state via ProductProvider
-useRef: Focus management on price input during editing
-useId: Accessible form labeling
-useCallback: Memoized fetch functions
-Custom Hook: useProducts for centralized data access
-React Router: Client-side routing with URL parameters
-
-### Known Limitations 
-- Images use external URLs (Unsplash) and may change or become unavailable
-- JSON Server must be running separately from the dev server
-
-- No authentication/authorization (admin portal is open)
-
-- No pagination for large product catalogs
-
-- Data persists only in memory (resets when JSON Server restarts unless db.json is modified)
-
-### Future Enhancements
-- Add product deletion functionality (DELETE requests)
-
-- Implement image upload instead of URL input
-
-- Add sorting and filtering by category
-
-- Implement user authentication
-
-- Add data persistence with a real database
-
-- Add toast notifications for success/error feedback
-
-### License
-MIT
-```
-with open(os.path.join(base_dir, "README.md"), "w") as f:
-f.write(readme_md)
 ---
 
-## Final Step: How to Run the Project
+## Installation
 
-After creating all files above, run these commands in your terminal:
+### 1. Clone the Repository
 
 ```bash
-# 1. Navigate to your project folder
+git clone https://github.com/yourusername/tech-haven.git
 cd tech-haven
+```
 
-# 2. Install all dependencies
+### 2. Install Dependencies
+
+```bash
 npm install
+```
 
-# 3. Start the mock backend API (Terminal 1)
+---
+
+## Running the Project
+
+### Start the Mock Backend
+
+Run this command in the first terminal:
+
+```bash
 npm run server
+```
 
-# 4. Start the React app (Terminal 2)
+The JSON Server will run on:
+
+```txt
+http://localhost:3001
+```
+
+### Start the React Development Server
+
+Run this command in a second terminal:
+
+```bash
 npm run dev
+```
 
-# 5. Run tests (Terminal 3)
+The React application will run on:
+
+```txt
+http://localhost:5173
+```
+
+---
+
+## Running Tests
+
+```bash
 npm test
-Important: You need two terminals running simultaneously:
-One for npm run server (backend on port 3001)
-One for npm run dev (frontend on port 5173)
-Your app will be live at http://localhost:5173
+```
+
+### Tests Cover
+
+- Component rendering
+- Form validation
+- User interactions
+- Navigation links
+- Prop passing
+- Routing behavior
+
+---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| GET | `/store_info/1` | Fetch store information |
+| GET | `/products` | Fetch all products |
+| POST | `/products` | Add a new product |
+| PATCH | `/products/:id` | Update an existing product |
+
+---
+
+## Advanced React Concepts Used
+
+### React Hooks
+
+- `useState` - Local state management
+- `useEffect` - Fetching data on component mount
+- `useContext` - Global product state management
+- `useRef` - Focus management during editing
+- `useId` - Accessible form labeling
+- `useCallback` - Memoized functions
+
+### Custom Hook
+
+- `useProducts` for centralized product fetching and state handling
+
+### Routing
+
+- React Router for client-side navigation
+- Dynamic routes using URL parameters
+
+---
+
+## Known Limitations
+
+- Images use external URLs and may become unavailable
+- JSON Server must run separately from the frontend
+- No authentication or authorization system
+- No pagination for large product catalogs
+- Data persistence depends on `db.json`
+
+---
+
+## Future Enhancements
+
+- Add DELETE functionality for products
+- Add image upload support
+- Implement product sorting and filtering
+- Add authentication and protected routes
+- Connect to a real database
+- Add toast notifications for user feedback
+
+---
+
+## Final Steps to Run the Application
+
+Open multiple terminals and run the following commands:
+
+### Terminal 1 - Backend Server
+
+```bash
+npm run server
+```
+
+### Terminal 2 - React Frontend
+
+```bash
+npm run dev
+```
+
+### Terminal 3 - Run Tests
+
+```bash
+npm test
+```
+
+---
+
+## Application URLs
+
+Frontend:
+
+```txt
+http://localhost:5173
+```
+
+Backend:
+
+```txt
+http://localhost:3001
+```
+
+---
+
+## License
+
+MIT License
+
+---
+
+## Author
+
+Rahab Wanja
